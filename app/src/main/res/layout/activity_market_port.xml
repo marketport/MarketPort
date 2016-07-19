@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+
+    <!-- Replace the default action bar -->
+
+    <android.support.v4.widget.DrawerLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="false"
+        tools:openDrawer="start"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="0dp"
+        android:layout_alignLeft="@+id/homeScrollView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/myapp_toolbar"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_width="match_parent"
+                android:elevation="5dp"
+                android:background="#aaaaaa"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="0dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="0dp">
+
+            </android.support.v7.widget.Toolbar>
+
+            <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/homeScrollView"
+                android:fillViewport="true"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="0dp"
+                android:layout_below="@+id/myapp_toolbar">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/black"
+                    android:alignmentMode="alignMargins"
+                    android:id="@+id/homeRelativeLayout"
+                    android:nestedScrollingEnabled="false"
+                    android:transitionGroup="false"
+                    android:layout_below="@+id/homeScrollView"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="false"
+                        android:layout_alignParentStart="true"
+                        android:id="@+id/tableRow1"
+                        android:weightSum="1">
+
+                        <ImageButton
+                            android:layout_width="193dp"
+                            android:layout_height="204dp"
+                            android:id="@+id/product1"
+                            android:clickable="true"
+                            android:src="@mipmap/mp3player"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            android:layout_below="@+id/homeScrollView"
+                            android:layout_toRightOf="@+id/homeScrollView"
+                            android:layout_toEndOf="@+id/homeScrollView"
+                            android:layout_gravity="left|right" />
+
+                        <ImageButton
+                            android:layout_width="193dp"
+                            android:layout_height="204dp"
+                            android:id="@+id/product2"
+                            android:clickable="true"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            android:src="@mipmap/smartwatch"
+                            android:layout_gravity="right|left" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tableRow1"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:id="@+id/tableRow2">
+
+                        <ImageButton
+                            android:layout_width="193dp"
+                            android:layout_height="204dp"
+                            android:id="@+id/product3"
+                            android:layout_column="0"
+                            android:src="@mipmap/iphone"
+                            android:clickable="true"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter" />
+
+                        <ImageButton
+                            android:layout_width="193dp"
+                            android:layout_height="204dp"
+                            android:id="@+id/product4"
+                            android:clickable="true"
+                            android:src="@mipmap/nutellaspray"
+                            android:scaleType="fitCenter" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tableRow2"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:id="@+id/tableRow3">
+
+                        <ImageButton
+                            android:layout_width="193dp"
+                            android:layout_height="204dp"
+                            android:id="@+id/product5"
+                            android:layout_column="0"
+                            android:clickable="true"
+                            android:src="@mipmap/mixer"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter" />
+
+                        <ImageButton
+                            android:layout_width="193dp"
+                            android:layout_height="204dp"
+                            android:id="@+id/product6"
+                            android:layout_column="1"
+                            android:src="@mipmap/kitkat"
+                            android:clickable="true"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/tableRow3"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:id="@+id/tableRow4">
+
+                        <ImageButton
+                            android:layout_width="193dp"
+                            android:layout_height="204dp"
+                            android:id="@+id/product7"
+                            android:layout_column="0"
+                            android:src="@mipmap/parkerpen"
+                            android:clickable="true"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            android:layout_below="@+id/homeRelativeLayout"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true" />
+                    </TableRow>
+
+                </RelativeLayout>
+            </ScrollView>
+
+        </LinearLayout>
+
+        <android.support.design.widget.NavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:fitsSystemWindows="true"
+            app:headerLayout="@layout/nav_header_market_port"
+            app:menu="@menu/activity_market_port_drawer"
+            android:focusable="true"
+            android:background="#aaaaaa" />
+
+
+    </android.support.v4.widget.DrawerLayout>
+
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_myhome"
+            android:icon="@mipmap/myhome"
+            android:title="MyHome" />
+        <item
+            android:id="@+id/nav_sellproduct"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="SellProduct" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Gallery" />
+        <item
+            android:id="@+id/nav_mybasket"
+            android:icon="@mipmap/mybasket"
+            android:title="MyBasket" />
+        <item
+            android:id="@+id/nav_mylink"
+            android:icon="@mipmap/mylinks"
+            android:title="MyLinks" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@mipmap/settings"
+            android:title="settings" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_website"
+                android:icon="@drawable/ic_menu_send"
+                android:title="www.marketport.com" />
+        </menu>
+    </item>
+
+</menu>
